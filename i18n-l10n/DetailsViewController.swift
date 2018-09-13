@@ -107,8 +107,8 @@ class DetailsViewController: UIViewController {
         //// attendanceLabel.text fim da i18n
 
         //// Imagens antes de i18n
-        wrongWayImage.image = UIImage(named: "wrongway-brazil")
-        noParkingImage.image = UIImage(named: "noparking-brazil")
+        wrongWayImage.image = UIImage(named: "wrongway-usa")
+        noParkingImage.image = UIImage(named: "noparking-usa")
         //// Imagens depois de i18n
         //        wrongWayImage.image = UIImage(named: NSLocalizedString("wrongway-brazil", comment: "asset name for \"Wrong Way\" symbol"))
         //        noParkingImage.image = UIImage(named: NSLocalizedString("noparking-brazil", comment: "asset name for \"No Parking\" symbol"))
