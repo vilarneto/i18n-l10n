@@ -57,7 +57,7 @@ class DetailsViewController: UIViewController {
         // MARK: 03 distanceLabel
         distanceLabel.text = String(format: distanceLabel.text!, getDistanceTravelled())
 
-        // MARK 04: attendanceLabel
+        // MARK: 04 attendanceLabel
         var attendanceVerb: String?
         switch getAttendance() {
         case .willGo:
@@ -69,7 +69,7 @@ class DetailsViewController: UIViewController {
         }
         attendanceLabel.text = String(format: attendanceLabel.text!, getBossName(), attendanceVerb!)
 
-        // MARK 05: Images
+        // MARK: 05 Images
         wrongWayImage.image = UIImage(named: "wrongway-usa")
         noParkingImage.image = UIImage(named: "noparking-usa")
     }

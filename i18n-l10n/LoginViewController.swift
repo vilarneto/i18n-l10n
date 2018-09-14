@@ -24,15 +24,15 @@ class LoginViewController: UIViewController {
 
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         guard let usernameText = username.text, !usernameText.isEmpty else {
+            // MARK: 06 alertController
             let alertController = UIAlertController(title: "Invalid login", message:
                 "You must provide a login!", preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "Dismiss", style: .default,handler: nil))
-            self.present(alertController, animated: true, completion: nil)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
 
+            self.present(alertController, animated: true, completion: nil)
             return false
         }
 
         return super.shouldPerformSegue(withIdentifier: identifier, sender: sender)
     }
 }
-
