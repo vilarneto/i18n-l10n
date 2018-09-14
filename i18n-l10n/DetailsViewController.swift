@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import MapKit
 
 
 enum Attendance: Int {
@@ -43,46 +44,20 @@ class DetailsViewController: UIViewController {
 
         helloLabel.text = String(format: helloLabel.text!, getUserName())
 
+        // MARK: 01 lastLoginLabel
         if let lastLoginDate = getLastLoginDate() {
-            //// lastLoginLabel antes de i18n
-            lastLoginLabel.text = String(format: lastLoginLabel.text!, lastLoginDate)
-            //// lastLoginLabel depois de i18n
-//            let calendar = NSCalendar.currentCalendar()
-//            let components = calendar.components(.Day, fromDate: lastLoginDate, toDate: NSDate(), options: [])
-//
-//            let dateFormatter = NSDateFormatter()
-//            let numberOfDaysSinceLastLogin = components.day
-//
-//            let daysAgoPhraseFormat = NSLocalizedString("%d day(s) ago", comment: "format string for a number of days ago")
-//            let daysAgoPhrase = String.localizedStringWithFormat(daysAgoPhraseFormat, numberOfDaysSinceLastLogin)
-//            
-//            dateFormatter.dateStyle = .LongStyle
-//            let formatString = NSLocalizedString("Welcome, your last login was at %@ (%@).", comment: "format string for date and number of days since last login")
-//            lastLoginLabel.text = String.localizedStringWithFormat(formatString, dateFormatter.stringFromDate(lastLoginDate), daysAgoPhrase)
-            //// lastLoginLabel antes de i18n
+            lastLoginLabel.text = String(format: lastLoginLabel.text!, lastLoginDate as NSDate)
         } else {
-            //// lastLoginLabel antes de i18n
             lastLoginLabel.text = "Welcome, this is your first login!"
-            //// lastLoginLabel depois de i18n
-            //            lastLoginLabel.text = NSLocalizedString("Welcome, this is your first login!", comment: "Welcome string to the user that logins the first time")
-            //// lastLoginLabel fim da i18n
         }
 
-        //// downloadCountLabel antes de i18n
+        // MARK: 02 downloadCountLabel
         downloadCountLabel.text = String(format: downloadCountLabel.text!, getBytesDownloaded())
-        //// downloadCountLabel depois de i18n
-        //        let byteCountFormatter = NSByteCountFormatter()
-        //        downloadCountLabel.text = String.localizedStringWithFormat(downloadCountLabel.text!, byteCountFormatter.stringFromByteCount(getBytesDownloaded()))
-        //// downloadCountLabel fim da i18n
 
-        //// distanceLabel antes de i18n
+        // MARK: 03 distanceLabel
         distanceLabel.text = String(format: distanceLabel.text!, getDistanceTravelled())
-        //// distanceLabel depois de i18n
-        //        let distanceFormatter = MKDistanceFormatter()
-        //        distanceLabel.text = String.localizedStringWithFormat(distanceLabel.text!, distanceFormatter.stringFromDistance(getDistanceTravelled()))
-        //// distanceLabel fim da i18n
 
-        //// attendanceLabel.text antes de i18n
+        // MARK 04: attendanceLabel
         var attendanceVerb: String?
         switch getAttendance() {
         case .willGo:
@@ -93,26 +68,10 @@ class DetailsViewController: UIViewController {
             attendanceVerb = "may"
         }
         attendanceLabel.text = String(format: attendanceLabel.text!, getBossName(), attendanceVerb!)
-        //// attendanceLabel.text depois de i18n
-        //        var attendancePhrase: String?
-        //        switch getAttendance() {
-        //        case .WillGo:
-        //            attendancePhrase = NSLocalizedString("you will go", comment: "phrase to say that you will go to the meeting")
-        //        case .WillNotGo:
-        //            attendancePhrase = NSLocalizedString("you will not go", comment: "phrase to say that you will not go to the meeting")
-        //        case .MayGo:
-        //            attendancePhrase = NSLocalizedString("you may go", comment: "phrase to say that you may go to the meeting")
-        //        }
-        //        attendanceLabel.text = String.localizedStringWithFormat(attendanceLabel.text!, getBossName(), attendancePhrase!)
-        //// attendanceLabel.text fim da i18n
 
-        //// Imagens antes de i18n
+        // MARK 05: Images
         wrongWayImage.image = UIImage(named: "wrongway-usa")
         noParkingImage.image = UIImage(named: "noparking-usa")
-        //// Imagens depois de i18n
-        //        wrongWayImage.image = UIImage(named: NSLocalizedString("wrongway-brazil", comment: "asset name for \"Wrong Way\" symbol"))
-        //        noParkingImage.image = UIImage(named: NSLocalizedString("noparking-brazil", comment: "asset name for \"No Parking\" symbol"))
-        //// Imagens fim da i18n
     }
 
     override func didReceiveMemoryWarning() {
@@ -133,9 +92,9 @@ class DetailsViewController: UIViewController {
         return 1234567890
     }
 
-    func getLastLoginDate() -> NSDate? {
+    func getLastLoginDate() -> Date? {
         let currentCase = LastLogin(rawValue: DetailsViewController.lastLoginRawValue)!
-        let today = NSDate()
+        let today = Date()
 
         DetailsViewController.lastLoginRawValue = (DetailsViewController.lastLoginRawValue + 1) % 5
 
