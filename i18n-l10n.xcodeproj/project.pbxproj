@@ -13,6 +13,7 @@
 		F76CCAE52149A6EB0065F200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76CCAE42149A6EB0065F200 /* Assets.xcassets */; };
 		F76CCAE82149A6EB0065F200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76CCAE62149A6EB0065F200 /* LaunchScreen.storyboard */; };
 		F76CCAF32149A9050065F200 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76CCAF22149A9050065F200 /* DetailsViewController.swift */; };
+		F78A27FA214C3DF800C162EE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F78A27F8214C3DF800C162EE /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,12 @@
 		F76CCAE72149A6EB0065F200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F76CCAE92149A6EB0065F200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F76CCAF22149A9050065F200 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		F78A27F6214C381C00C162EE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
+		F78A27F7214C381C00C162EE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		F78A27F9214C3DF800C162EE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F78A27FB214C494400C162EE /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Main.strings; sourceTree = "<group>"; };
+		F78A27FC214C494400C162EE /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		F78A27FD214C494400C162EE /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +70,7 @@
 				F76CCAE42149A6EB0065F200 /* Assets.xcassets */,
 				F76CCAE62149A6EB0065F200 /* LaunchScreen.storyboard */,
 				F76CCAE92149A6EB0065F200 /* Info.plist */,
+				F78A27F8214C3DF800C162EE /* Localizable.strings */,
 			);
 			path = "i18n-l10n";
 			sourceTree = "<group>";
@@ -110,6 +118,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
+				he,
 			);
 			mainGroup = F76CCAD12149A6EA0065F200;
 			productRefGroup = F76CCADB2149A6EA0065F200 /* Products */;
@@ -127,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F76CCAE82149A6EB0065F200 /* LaunchScreen.storyboard in Resources */,
+				F78A27FA214C3DF800C162EE /* Localizable.strings in Resources */,
 				F76CCAE52149A6EB0065F200 /* Assets.xcassets in Resources */,
 				F76CCAE32149A6EA0065F200 /* Main.storyboard in Resources */,
 			);
@@ -152,6 +163,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				F76CCAE22149A6EA0065F200 /* Base */,
+				F78A27F6214C381C00C162EE /* pt-BR */,
+				F78A27FB214C494400C162EE /* he */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -160,8 +173,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				F76CCAE72149A6EB0065F200 /* Base */,
+				F78A27F7214C381C00C162EE /* pt-BR */,
+				F78A27FC214C494400C162EE /* he */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F78A27F8214C3DF800C162EE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F78A27F9214C3DF800C162EE /* pt-BR */,
+				F78A27FD214C494400C162EE /* he */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -171,6 +195,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -231,6 +256,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

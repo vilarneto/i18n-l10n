@@ -1,0 +1,27 @@
+/* Alert controller button to dismiss the message */
+"Dismiss" = "Fechar";
+
+/* Alert controller title to saying that the login is invalid */
+"Invalid login" = "Login inválido";
+
+/* Asset name for No Parking sign */
+"noparking-usa" = "noparking-brazil";
+
+/* Welcome message displayed to the first-time user */
+"Welcome, this is your first login!" = "Olá, este é o seu primeiro login!";
+
+/* Asset name for Wrong Way sign */
+"wrongway-usa" = "wrongway-brazil";
+
+/* Instruction to the user saying that s/he must provide a login */
+"You must provide a login!" = "Você tem que fornecer um login!";
+
+/* Phrase to say that user may or may not attend to a meeting */
+"you said that you may go" = "Você disse que talvez vá";
+
+/* Phrase to say that user will attend to a meeting */
+"you said that you will go" = "Você disse que você vai";
+
+/* Phrase to say that user will not attend to a meeting */
+"you said that you will no go" = "Você disse que tá fora";
+

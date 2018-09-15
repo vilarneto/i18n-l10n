@@ -1,0 +1,30 @@
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "1gz-GL-Fcd"; */
+"1gz-GL-Fcd.normalTitle" = "Autenticar";
+
+/* Class = "UILabel"; text = "Hello, %@."; ObjectID = "A4j-o6-iQc"; */
+"A4j-o6-iQc.text" = "Olá, %@.";
+
+/* Class = "UILabel"; text = "You've downloaded %@ since your first login."; ObjectID = "DKG-qJ-Of8"; */
+"DKG-qJ-Of8.text" = "Você baixou %@ desde o seu primeiro login.";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "JDs-R3-YbQ"; */
+"JDs-R3-YbQ.text" = "Senha";
+
+/* Class = "UILabel"; text = "Welcome back, your last login was at %@."; ObjectID = "k1l-bS-Gg7"; */
+"k1l-bS-Gg7.text" = "Seja bem-vindo de volta, seu último login foi em %@.";
+
+/* Class = "UILabel"; text = "User name"; ObjectID = "kQY-bM-4o9"; */
+"kQY-bM-4o9.text" = "Nome do usuário";
+
+/* Class = "UINavigationItem"; title = "Details"; ObjectID = "kxY-6b-kaZ"; */
+"kxY-6b-kaZ.title" = "Detalhes";
+
+/* Class = "UILabel"; text = "You walked %@."; ObjectID = "RUf-KY-BLM"; */
+"RUf-KY-BLM.text" = "Você andou %@.";
+
+/* Class = "UILabel"; text = "Your boss %@ called about the meeting; %@."; ObjectID = "rWs-dF-8dw"; */
+"rWs-dF-8dw.text" = "Seu chefe %@ ligou sobre a reunião; %@.";
+
+/* Class = "UINavigationItem"; title = "Login"; ObjectID = "tDx-B4-6Cj"; */
+"tDx-B4-6Cj.title" = "Login";
+

@@ -25,9 +25,9 @@ class LoginViewController: UIViewController {
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         guard let usernameText = username.text, !usernameText.isEmpty else {
             // MARK: 06 alertController
-            let alertController = UIAlertController(title: "Invalid login", message:
-                "You must provide a login!", preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+            let alertController = UIAlertController(title: NSLocalizedString("Invalid login", comment: "Alert controller title to saying that the login is invalid"), message:
+                NSLocalizedString("You must provide a login!", comment: "Instruction to the user saying that s/he must provide a login"), preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: NSLocalizedString("Dismiss", comment: "Alert controller button to dismiss the message"), style: .default))
 
             self.present(alertController, animated: true, completion: nil)
             return false
